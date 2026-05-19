@@ -105,7 +105,7 @@ export const Experience: FC = () => {
 
   return (
     <section
-      id="experience"
+      id="projects"
       className="w-full py-20 bg-gray-50"
     >
       <div className="container mx-auto px-6 max-w-5xl">
@@ -113,7 +113,7 @@ export const Experience: FC = () => {
           color: '#2d3748',
           fontWeight: '300'
         }}>
-          Experience
+          Projects
         </h2>
 
         <div className="flex justify-center mb-16">

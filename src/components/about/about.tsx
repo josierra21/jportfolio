@@ -8,7 +8,8 @@ export const About: FC = () => {
   const hobbies = [
     "hiking",
     "training for half-marathons",
-    "investing"
+    "investing",
+    "learning new languages"
   ];
   
   const [currentHobbyIndex, setCurrentHobbyIndex] = useState(0);

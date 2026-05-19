@@ -60,7 +60,7 @@ export const About: FC = () => {
             </h1>
 
             <h2 className="text-2xl md:text-3xl font-light mb-8 tracking-wide" style={{ color: '#4a5568' }}>
-              I'm <span style={{ color: '#2d3748', fontWeight: '400' }}>Joanna Sierra-Mendoza</span>
+              I'm <span style={{ color: '#2d3748', fontWeight: '400' }}>Joanna</span>
             </h2>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-12 max-w-xl">

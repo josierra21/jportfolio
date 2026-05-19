@@ -6,9 +6,8 @@ import { SiGmail } from 'react-icons/si';
 
 export const About: FC = () => {
   const hobbies = [
-    "exploring new technologies",
     "hiking",
-    "running half-marathons",
+    "training for half-marathons",
     "investing"
   ];
   
@@ -65,7 +64,7 @@ export const About: FC = () => {
             </h2>
 
             <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-12 max-w-xl">
-              A passionate <span style={{ color: '#2d3748', fontWeight: '500' }}>Software Engineering</span> and <span style={{ color: '#2d3748', fontWeight: '500' }}>Data Science</span> student who loves building ideas through <span style={{ color: '#2d3748', fontWeight: '500' }}>code</span> and enjoys<span 
+              A passionate <span style={{ color: '#2d3748', fontWeight: '500' }}>Software Engineering</span> and <span style={{ color: '#2d3748', fontWeight: '500' }}>Data Science</span> student interested in <span style={{ color: '#2d3748', fontWeight: '500' }}>AI</span>, <span style={{ color: '#2d3748', fontWeight: '500' }}>machine learning</span>, and building ideas through <span style={{ color: '#2d3748', fontWeight: '500' }}>code</span>. Outside of tech, I enjoy<span  
                 style={{ 
                   color: '#2d3748', 
                   fontWeight: '500',

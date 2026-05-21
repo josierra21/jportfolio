@@ -31,29 +31,42 @@ export const Experience: FC = () => {
       title: "Credit Risk MLOps Pipeline",
       description: "April 2026",
       repoLink: "https://github.com/josierra21/credit-risk-mlops",
-      overview: "",
+      overview: "An end-to-end machine learning system that predicts credit card default risk using a production-style MLOps workflow. The project includes data ingestion, validation, transformation, model training, deployment, and a FastAPI web interface for real-time predictions.",
       contributions: [
-        ""
+        "Built a modular training pipeline with data ingestion from MongoDB, validation, transformation, model training, and evaluation.",
+        "Implemented credit default prediction with XGBoost and supporting Scikit-learn workflows.",
+        "Added data drift detection with Evidently AI to support model monitoring and data quality checks.",
+        "Containerized the application with Docker and deployed it through AWS services including ECR, EC2, and S3.",
+        "Configured GitHub Actions CI/CD to automate image builds, deployment, and application updates."
       ],
-      techStack: ["Python", "AWS", "MongoDB", "Docker"]
+      techStack: ["Python", "FastAPI", "XGBoost", "Scikit-learn", "MongoDB", "Docker", "AWS", "GitHub Actions", "Evidently AI"]
     },
     {
       title: "Weather App",
-      description: "",
-      techStack: ["Python"],
-      overview: "",
+      description: "February 2024",
+      repoLink: "https://github.com/josierra21/Intro-to-Python/blob/main/Sierra_week12Weather_App.py",
+      techStack: ["Python", "OpenWeatherMap API", "Requests"],
+      overview: "A command-line Python weather application that retrieves current weather information from the OpenWeatherMap API. Users can search by ZIP code or city and state, choose their preferred temperature unit, and view formatted weather details in the terminal.",
       contributions: [
-        ""
+        "Created a simple terminal app where users can look up weather by ZIP code or city and state.",
+        "Integrated OpenWeatherMap API requests to retrieve location coordinates and current weather data.",
+        "Added support for Celsius, Fahrenheit, and Kelvin temperature units.",
+        "Formatted weather output to display temperature, feels-like temperature, pressure, humidity, wind, clouds, and conditions.",
+        "Included input validation and API error handling for invalid locations or failed requests."
       ]
     },
     {
       title: "Alabama City Guide",
-      description: "",
-      repoLink: "",
+      description: "August 2025",
+      repoLink: "https://github.com/josierra21/d277-front-end-web-development",
       techStack: ["HTML", "CSS", "JavaScript"],
-      overview: "",
+      overview: "A responsive multi-page informational website about Alabama, featuring dedicated pages for Montgomery, Birmingham, and Mobile. The site presents city history, demographics, attractions, culture, education, and cost-of-living information through structured front-end pages.",
       contributions: [
-        ""
+        "Built a multi-page website with consistent navigation across the home, city, and contact pages.",
+        "Structured content with semantic HTML, organized headings, lists, tables, and page sections.",
+        "Styled responsive layouts with external CSS to support readability across screen sizes.",
+        "Added a contact form with basic client-side email confirmation validation using JavaScript.",
+        "Integrated images, media assets, and Google Fonts to create a more complete user experience."
       ]
     },
     {
@@ -68,10 +81,14 @@ export const Experience: FC = () => {
     {
       title: "Interactive World Map",
       description: "May 2026",
-      techStack: ["JavaScript", "HTML", "CSS"],
-      overview: "",
+      repoLink: "https://github.com/josierra21/worldmap_angular",
+      techStack: ["Angular", "TypeScript", "HTML", "CSS", "World Bank API", "SVG"],
+      overview: "An Angular application that displays an interactive SVG world map and lets users click on countries to view country-specific information retrieved from the World Bank API.",
       contributions: [
-        ""
+        "Built an interactive map experience where users can select countries directly from an SVG world map.",
+        "Integrated the World Bank API to retrieve and display dynamic country details.",
+        "Organized the application with Angular routing and component-based structure.",
+        "Created a dedicated map page that updates country information based on user interaction."
       ]
     }
   ];

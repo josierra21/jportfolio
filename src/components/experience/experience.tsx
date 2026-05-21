@@ -71,11 +71,16 @@ export const Experience: FC = () => {
     },
     {
       title: "Credit Card Fraud Detection",
-      description: "", 
-      techStack: ["Python"],
-      overview: "",
+      description: "May 2025",
+      repoLink: "https://github.com/josierra21/DSC550-Data_Mining",
+      techStack: ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Machine Learning"],
+      overview: "A machine learning project focused on detecting fraudulent credit card transactions using a highly imbalanced Kaggle dataset. The project compares multiple classification models and evaluates performance using accuracy, precision, recall, and F1-score.",
       contributions: [
-        ""
+        "Performed exploratory data analysis to understand class imbalance, feature distributions, and possible outliers.",
+        "Prepared training, testing, and validation datasets, including a balanced dataset created through undersampling.",
+        "Trained and compared Logistic Regression, Random Forest, Gradient Boosting, Linear SVC, and shallow neural network models.",
+        "Evaluated model performance using accuracy, precision, recall, and F1-score.",
+        "Selected Logistic Regression on the balanced dataset as the final model because it provided strong, consistent fraud detection results."
       ]
     },
     {

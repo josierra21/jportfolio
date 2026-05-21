@@ -3,7 +3,7 @@ import { type FC, useState } from 'react';
 
 export const Experience: FC = () => {
   const [selectedProject, setSelectedProject] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<'experience' | 'projects'>('experience');
+  const [activeTab, setActiveTab] = useState<'experience' | 'projects'>('projects');
   const [selectedExperience, setSelectedExperience] = useState<{
     title: string;
     role: string;
@@ -14,6 +14,14 @@ export const Experience: FC = () => {
     contributions: string[];
     techStack: string[];
   } | null>(null);
+
+  const getInitials = (title: string) =>
+    title
+      .split(" ")
+      .map((word) => word[0])
+      .join("")
+      .slice(0, 2)
+      .toUpperCase();
 
   const projects = [
     {
@@ -68,38 +76,44 @@ export const Experience: FC = () => {
      {
       title: "Handshake AI",
       role: "AI Trainer",
-      duration: "",
+      duration: "Nov 2025 - Present",
       image:"",
-      details: "",
-      overview: "",
+      details: "AI training, model evaluation, and quality review.",
+      overview: "Contribute to AI training projects by reviewing model outputs for reasoning quality, accuracy, safety, and alignment with project guidelines.",
       contributions: [
-        ""
+        "Evaluate AI responses for accuracy, reasoning quality, safety, and guideline alignment.",
+        "Provide structured feedback that helps improve model reliability and user experience.",
+        "Support multiple AI training projects through detailed quality reviews."
       ],
-      techStack: [""]
+      techStack: ["AI Evaluation", "Quality Review", "Prompt Assessment"]
     },
     {
       title: "Outlier AI",
       role: "AI Trainer",
-      duration: "",
+      duration: "Jun 2024 - Nov 2025",
       image:"",
-      details: "",
-      overview: "", 
+      details: "AI response assessment and dataset quality improvement.",
+      overview: "Analyzed model outputs using structured evaluation rubrics and contributed to quality improvements across diverse AI training tasks.",
       contributions: [
-        ""
+        "Assessed model outputs using structured rubrics to improve dataset quality.",
+        "Reviewed prompts and responses across different projects for clarity, accuracy, and usefulness.",
+        "Collaborated on AI training tasks focused on evaluation consistency and quality control."
       ],
-      techStack: [""]
+      techStack: ["AI Training", "Rubric Evaluation", "Data Quality"]
     },
     {
-      title: "Zoetis",
+      title: "Zoetis Inc.",
       role: "Laboratory Technician",
-      duration: "",
+      duration: "Dec 2022 - Sep 2024",
       image: "",
-      details: "",
-      overview: "",
+      details: "Laboratory technician supporting mAbs operations in Lincoln, NE.",
+      overview: "Supported mAbs laboratory operations by monitoring cell growth data, preparing trend reports, and maintaining quality and compliance documentation.",
       contributions: [
-        ""
+        "Monitored and analyzed cell growth data to support process optimization.",
+        "Prepared environmental monitoring reports to maintain quality and compliance standards.",
+        "Helped revise batch records, SOPs, and OJTs to improve accuracy and operational efficiency."
       ],
-      techStack: [""]
+      techStack: ["Data Analysis", "Trend Reporting", "SOPs", "Quality Compliance"]
     }
   ];
 
@@ -120,16 +134,6 @@ export const Experience: FC = () => {
           <div className="border-b border-gray-200">
             <nav className="flex space-x-12">
               <button
-                onClick={() => setActiveTab('experience')}
-                className={`py-4 px-2 border-b-2 font-medium text-sm tracking-wide transition-colors ${
-                  activeTab === 'experience'
-                    ? 'border-gray-900 text-gray-900'
-                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                }`}
-              >
-                EXPERIENCE
-              </button>
-              <button
                 onClick={() => setActiveTab('projects')}
                 className={`py-4 px-2 border-b-2 font-medium text-sm tracking-wide transition-colors ${
                   activeTab === 'projects'
@@ -138,6 +142,16 @@ export const Experience: FC = () => {
                 }`}
               >
                 PROJECTS
+              </button>
+              <button
+                onClick={() => setActiveTab('experience')}
+                className={`py-4 px-2 border-b-2 font-medium text-sm tracking-wide transition-colors ${
+                  activeTab === 'experience'
+                    ? 'border-gray-900 text-gray-900'
+                    : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                }`}
+              >
+                EXPERIENCE
               </button>
             </nav>
           </div>
@@ -152,11 +166,17 @@ export const Experience: FC = () => {
                   className="flex items-start border-l-2 border-gray-200 pl-8 py-6 hover:border-gray-400 transition-colors cursor-pointer"
                   onClick={() => setSelectedExperience(exp)}
                 >
-                  <img
-                    src={exp.image}
-                    alt={exp.title}
-                    className="w-12 h-12 rounded object-cover flex-shrink-0 mt-1"
-                  />
+                  {exp.image ? (
+                    <img
+                      src={exp.image}
+                      alt={exp.title}
+                      className="w-12 h-12 rounded object-cover flex-shrink-0 mt-1"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 rounded bg-gray-100 text-gray-600 flex items-center justify-center flex-shrink-0 mt-1 font-medium text-sm">
+                      {getInitials(exp.title)}
+                    </div>
+                  )}
                   <div className="ml-6 flex-1">
                     <div className="flex items-start justify-between mb-3">
                       <div>

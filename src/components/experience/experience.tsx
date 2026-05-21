@@ -1,4 +1,7 @@
 import { type FC, useState } from 'react';
+import HandshakeLogo from "./handshake.jpg";
+import OutlierLogo from "./outlier.jpg";
+import ZoetisLogo from "./zoetis.png";
 
 
 export const Experience: FC = () => {
@@ -77,7 +80,7 @@ export const Experience: FC = () => {
       title: "Handshake AI",
       role: "AI Trainer",
       duration: "Nov 2025 - Present",
-      image:"",
+      image: HandshakeLogo,
       details: "AI training, model evaluation, and quality review.",
       overview: "Contribute to AI training projects by reviewing model outputs for reasoning quality, accuracy, safety, and alignment with project guidelines.",
       contributions: [
@@ -91,7 +94,7 @@ export const Experience: FC = () => {
       title: "Outlier AI",
       role: "AI Trainer",
       duration: "Jun 2024 - Nov 2025",
-      image:"",
+      image: OutlierLogo,
       details: "AI response assessment and dataset quality improvement.",
       overview: "Analyzed model outputs using structured evaluation rubrics and contributed to quality improvements across diverse AI training tasks.",
       contributions: [
@@ -105,7 +108,7 @@ export const Experience: FC = () => {
       title: "Zoetis Inc.",
       role: "Laboratory Technician",
       duration: "Dec 2022 - Sep 2024",
-      image: "",
+      image: ZoetisLogo,
       details: "Laboratory technician supporting mAbs operations in Lincoln, NE.",
       overview: "Supported mAbs laboratory operations by monitoring cell growth data, preparing trend reports, and maintaining quality and compliance documentation.",
       contributions: [

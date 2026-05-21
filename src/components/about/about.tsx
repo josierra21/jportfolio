@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import { useState, useEffect } from 'react';
 import IMG from "../images/profilephoto.jpg";
+import Resume from "./Joanna_Sierra_Mendoza_Resume.pdf";
 import { FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
 
@@ -64,7 +65,7 @@ export const About: FC = () => {
               I'm <span style={{ color: '#2d3748', fontWeight: '400' }}>Joanna</span>
             </h2>
 
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-12 max-w-xl">
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-12 max-w-xl min-h-40 md:min-h-36">
               A passionate <span style={{ color: '#2d3748', fontWeight: '500' }}>Software Engineering</span> and <span style={{ color: '#2d3748', fontWeight: '500' }}>Data Science</span> student interested in <span style={{ color: '#2d3748', fontWeight: '500' }}>AI</span>, <span style={{ color: '#2d3748', fontWeight: '500' }}>machine learning</span>, and building ideas through <span style={{ color: '#2d3748', fontWeight: '500' }}>code</span>. Outside of tech, I enjoy<span  
                 style={{ 
                   color: '#2d3748', 
@@ -103,10 +104,9 @@ export const About: FC = () => {
                 <FaGithub size={24} />
               </a>
               
-              <a href="/" 
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 title="View Resume"
+              <a href={Resume}
+                 download="Joanna_Sierra_Mendoza_Resume.pdf"
+                 title="Download Resume"
                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
               >
                 <FaFileDownload size={24} />

@@ -28,6 +28,20 @@ export const Experience: FC = () => {
 
   const projects = [
     {
+      title: "Image Caption Generator",
+      description: "May 2026",
+      repoLink: "https://github.com/josierra21/image_caption_generator",
+      overview: "A deep learning project that trains a CNN + LSTM model to generate captions for uploaded images. The project includes model training in a Jupyter notebook and a Streamlit app for trying the caption generator through a simple web interface.",
+      contributions: [
+        "Built an image captioning workflow using a CNN for image features and an LSTM model for caption generation.",
+        "Created a training notebook that produces saved model, tokenizer, configuration, and feature artifacts.",
+        "Used MobileNetV2 features to support image understanding before generating captions.",
+        "Served the trained model through a Streamlit application for interactive image uploads and caption results.",
+        "Documented setup, training, and local app instructions so the project can be reproduced."
+      ],
+      techStack: ["Python", "TensorFlow", "Keras", "CNN", "LSTM", "MobileNetV2", "Streamlit"]
+    },
+    {
       title: "Credit Risk MLOps Pipeline",
       description: "April 2026",
       repoLink: "https://github.com/josierra21/credit-risk-mlops",

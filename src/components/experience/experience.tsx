@@ -56,6 +56,61 @@ export const Experience: FC = () => {
       techStack: ["Python", "TensorFlow", "Keras", "CNN", "LSTM", "MobileNetV2", "Streamlit"]
     },
     {
+      title: "Weather App",
+      description: "February 2024",
+      repoLink: "https://github.com/josierra21/Intro-to-Python",
+      techStack: ["Python", "OpenWeatherMap API", "Requests"],
+      overview: "A command-line Python weather application that retrieves current weather information from the OpenWeatherMap API. Users can search by ZIP code or city and state, choose their preferred temperature unit, and view formatted weather details in the terminal.",
+      contributions: [
+        "Created a simple terminal app where users can look up weather by ZIP code or city and state.",
+        "Integrated OpenWeatherMap API requests to retrieve location coordinates and current weather data.",
+        "Added support for Celsius, Fahrenheit, and Kelvin temperature units.",
+        "Formatted weather output to display temperature, feels-like temperature, pressure, humidity, wind, clouds, and conditions.",
+        "Included input validation and API error handling for invalid locations or failed requests."
+      ]
+    },
+    {
+      title: "Alabama City Guide",
+      description: "August 2025",
+      repoLink: "https://github.com/josierra21/d277-front-end-web-development",
+      techStack: ["HTML", "CSS", "JavaScript"],
+      overview: "A responsive multi-page informational website about Alabama, featuring dedicated pages for Montgomery, Birmingham, and Mobile. The site presents city history, demographics, attractions, culture, education, and cost-of-living information through structured front-end pages.",
+      contributions: [
+        "Built a multi-page website with consistent navigation across the home, city, and contact pages.",
+        "Structured content with semantic HTML, organized headings, lists, tables, and page sections.",
+        "Styled responsive layouts with external CSS to support readability across screen sizes.",
+        "Added a contact form with basic client-side email confirmation validation using JavaScript.",
+        "Integrated images, media assets, and Google Fonts to create a more complete user experience."
+      ]
+    },
+    {
+      title: "Credit Card Fraud Detection",
+      description: "May 2025",
+      repoLink: "https://github.com/josierra21/DSC550-Data_Mining",
+      techStack: ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Machine Learning"],
+      overview: "A machine learning project focused on detecting fraudulent credit card transactions using a highly imbalanced Kaggle dataset. The project compares multiple classification models and evaluates performance using accuracy, precision, recall, and F1-score.",
+      contributions: [
+        "Performed exploratory data analysis to understand class imbalance, feature distributions, and possible outliers.",
+        "Prepared training, testing, and validation datasets, including a balanced dataset created through undersampling.",
+        "Trained and compared Logistic Regression, Random Forest, Gradient Boosting, Linear SVC, and shallow neural network models.",
+        "Evaluated model performance using accuracy, precision, recall, and F1-score.",
+        "Selected Logistic Regression on the balanced dataset as the final model because it provided strong, consistent fraud detection results."
+      ]
+    },
+    {
+      title: "Interactive World Map",
+      description: "May 2026",
+      repoLink: "https://github.com/josierra21/worldmap_angular",
+      techStack: ["Angular", "TypeScript", "HTML", "CSS", "World Bank API", "SVG"],
+      overview: "An Angular application that displays an interactive SVG world map and lets users click on countries to view country-specific information retrieved from the World Bank API.",
+      contributions: [
+        "Built an interactive map experience where users can select countries directly from an SVG world map.",
+        "Integrated the World Bank API to retrieve and display dynamic country details.",
+        "Organized the application with Angular routing and component-based structure.",
+        "Created a dedicated map page that updates country information based on user interaction."
+      ]
+    },
+    {
       title: "Hotel Booking Cancellation Analysis",
       description: "Machine Learning Analysis",
       repoLink: "https://github.com/josierra21/hotel-booking-cancellation-analysis",
@@ -110,61 +165,6 @@ export const Experience: FC = () => {
         "Applied ethical visualization practices to present public safety data accurately for a non-technical audience."
       ],
       techStack: ["R", "ggplot2", "Treemap", "PowerPoint", "Data Visualization", "Infographic Design"]
-    },
-    {
-      title: "Weather App",
-      description: "February 2024",
-      repoLink: "https://github.com/josierra21/Intro-to-Python/blob/main/Sierra_week12Weather_App.py",
-      techStack: ["Python", "OpenWeatherMap API", "Requests"],
-      overview: "A command-line Python weather application that retrieves current weather information from the OpenWeatherMap API. Users can search by ZIP code or city and state, choose their preferred temperature unit, and view formatted weather details in the terminal.",
-      contributions: [
-        "Created a simple terminal app where users can look up weather by ZIP code or city and state.",
-        "Integrated OpenWeatherMap API requests to retrieve location coordinates and current weather data.",
-        "Added support for Celsius, Fahrenheit, and Kelvin temperature units.",
-        "Formatted weather output to display temperature, feels-like temperature, pressure, humidity, wind, clouds, and conditions.",
-        "Included input validation and API error handling for invalid locations or failed requests."
-      ]
-    },
-    {
-      title: "Alabama City Guide",
-      description: "August 2025",
-      repoLink: "https://github.com/josierra21/d277-front-end-web-development",
-      techStack: ["HTML", "CSS", "JavaScript"],
-      overview: "A responsive multi-page informational website about Alabama, featuring dedicated pages for Montgomery, Birmingham, and Mobile. The site presents city history, demographics, attractions, culture, education, and cost-of-living information through structured front-end pages.",
-      contributions: [
-        "Built a multi-page website with consistent navigation across the home, city, and contact pages.",
-        "Structured content with semantic HTML, organized headings, lists, tables, and page sections.",
-        "Styled responsive layouts with external CSS to support readability across screen sizes.",
-        "Added a contact form with basic client-side email confirmation validation using JavaScript.",
-        "Integrated images, media assets, and Google Fonts to create a more complete user experience."
-      ]
-    },
-    {
-      title: "Credit Card Fraud Detection",
-      description: "May 2025",
-      repoLink: "https://github.com/josierra21/DSC550-Data_Mining",
-      techStack: ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Machine Learning"],
-      overview: "A machine learning project focused on detecting fraudulent credit card transactions using a highly imbalanced Kaggle dataset. The project compares multiple classification models and evaluates performance using accuracy, precision, recall, and F1-score.",
-      contributions: [
-        "Performed exploratory data analysis to understand class imbalance, feature distributions, and possible outliers.",
-        "Prepared training, testing, and validation datasets, including a balanced dataset created through undersampling.",
-        "Trained and compared Logistic Regression, Random Forest, Gradient Boosting, Linear SVC, and shallow neural network models.",
-        "Evaluated model performance using accuracy, precision, recall, and F1-score.",
-        "Selected Logistic Regression on the balanced dataset as the final model because it provided strong, consistent fraud detection results."
-      ]
-    },
-    {
-      title: "Interactive World Map",
-      description: "May 2026",
-      repoLink: "https://github.com/josierra21/worldmap_angular",
-      techStack: ["Angular", "TypeScript", "HTML", "CSS", "World Bank API", "SVG"],
-      overview: "An Angular application that displays an interactive SVG world map and lets users click on countries to view country-specific information retrieved from the World Bank API.",
-      contributions: [
-        "Built an interactive map experience where users can select countries directly from an SVG world map.",
-        "Integrated the World Bank API to retrieve and display dynamic country details.",
-        "Organized the application with Angular routing and component-based structure.",
-        "Created a dedicated map page that updates country information based on user interaction."
-      ]
     }
   ];
   const experiences = [

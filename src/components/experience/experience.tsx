@@ -29,7 +29,7 @@ export const Experience: FC = () => {
   const projects = [
     {
       title: "Credit Risk MLOps Pipeline",
-      description: "April 2026",
+      description: "Machine Learning Project",
       repoLink: "https://github.com/josierra21/credit-risk-mlops",
       overview: "An end-to-end machine learning system that predicts credit card default risk using a production-style MLOps workflow. The project includes data ingestion, validation, transformation, model training, deployment, and a FastAPI web interface for real-time predictions.",
       contributions: [
@@ -43,7 +43,7 @@ export const Experience: FC = () => {
     },
     {
       title: "Image Caption Generator",
-      description: "May 2026",
+      description: "Deep Learning Project",
       repoLink: "https://github.com/josierra21/image_caption_generator",
       overview: "A deep learning project that trains a CNN + LSTM model to generate captions for uploaded images. The project includes model training in a Jupyter notebook and a Streamlit app for trying the caption generator through a simple web interface.",
       contributions: [
@@ -57,7 +57,7 @@ export const Experience: FC = () => {
     },
     {
       title: "Weather App",
-      description: "February 2024",
+      description: "Python Project",
       repoLink: "https://github.com/josierra21/Intro-to-Python",
       techStack: ["Python", "OpenWeatherMap API", "Requests"],
       overview: "A command-line Python weather application that retrieves current weather information from the OpenWeatherMap API. Users can search by ZIP code or city and state, choose their preferred temperature unit, and view formatted weather details in the terminal.",
@@ -71,7 +71,7 @@ export const Experience: FC = () => {
     },
     {
       title: "Alabama City Guide",
-      description: "August 2025",
+      description: "Front-End Web Project",
       repoLink: "https://github.com/josierra21/d277-front-end-web-development",
       techStack: ["HTML", "CSS", "JavaScript"],
       overview: "A responsive multi-page informational website about Alabama, featuring dedicated pages for Montgomery, Birmingham, and Mobile. The site presents city history, demographics, attractions, culture, education, and cost-of-living information through structured front-end pages.",
@@ -85,7 +85,7 @@ export const Experience: FC = () => {
     },
     {
       title: "Credit Card Fraud Detection",
-      description: "May 2025",
+      description: "Machine Learning Project",
       repoLink: "https://github.com/josierra21/DSC550-Data_Mining",
       techStack: ["Python", "Pandas", "Scikit-learn", "Matplotlib", "Machine Learning"],
       overview: "A machine learning project focused on detecting fraudulent credit card transactions using a highly imbalanced Kaggle dataset. The project compares multiple classification models and evaluates performance using accuracy, precision, recall, and F1-score.",
@@ -99,7 +99,7 @@ export const Experience: FC = () => {
     },
     {
       title: "Interactive World Map",
-      description: "May 2026",
+      description: "Angular Project",
       repoLink: "https://github.com/josierra21/worldmap_angular",
       techStack: ["Angular", "TypeScript", "HTML", "CSS", "World Bank API", "SVG"],
       overview: "An Angular application that displays an interactive SVG world map and lets users click on countries to view country-specific information retrieved from the World Bank API.",

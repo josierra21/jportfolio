@@ -56,6 +56,62 @@ export const Experience: FC = () => {
       techStack: ["Python", "TensorFlow", "Keras", "CNN", "LSTM", "MobileNetV2", "Streamlit"]
     },
     {
+      title: "Hotel Booking Cancellation Analysis",
+      description: "Machine Learning Analysis",
+      repoLink: "https://github.com/josierra21/hotel-booking-cancellation-analysis",
+      overview: "A machine learning analysis that explores hotel booking cancellation behavior using more than 119,000 reservation records. The project combines exploratory data analysis, feature engineering, and a Random Forest model to identify reservations at higher risk of cancellation.",
+      contributions: [
+        "Cleaned hotel booking data by removing duplicates, handling missing values, encoding categorical variables, and standardizing formats.",
+        "Engineered features such as total guest count and derived booking characteristics to support model performance.",
+        "Analyzed cancellation patterns across lead time, special requests, market segments, hotel type, and room assignments.",
+        "Trained a Random Forest Classifier to predict whether a reservation would be canceled.",
+        "Interpreted feature importance to identify lead time, month-year, country, market segment, special requests, ADR, deposit type, and previous cancellations as key predictors."
+      ],
+      techStack: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Jupyter Notebook"]
+    },
+    {
+      title: "Childcare Affordability Dashboard",
+      description: "Data Visualization Project",
+      repoLink: "https://github.com/josierra21/national-database-of-childcare-prices",
+      overview: "A data visualization project using the National Database of Childcare Prices to examine childcare affordability in the United States from 2008 through 2018. The project uses dashboarding and visual storytelling to communicate how childcare costs compare to household income and federal affordability benchmarks.",
+      contributions: [
+        "Prepared childcare price, household income, unemployment, and labor force participation data for visualization.",
+        "Aggregated data by state and year to support trend analysis and geographic comparisons.",
+        "Converted weekly childcare costs into annual estimates and compared them with median household income.",
+        "Built an interactive Power BI dashboard with state and year filters, affordability mapping, and cost trend visuals.",
+        "Created presentation and billboard-style deliverables to communicate findings for different audiences."
+      ],
+      techStack: ["Power BI", "Excel", "PowerPoint", "Data Visualization", "Dashboard Design"]
+    },
+    {
+      title: "TSA Complaint Analysis",
+      description: "Data Analysis Project",
+      repoLink: "https://github.com/josierra21/TSA-complaint-analysis",
+      overview: "A data analysis project examining TSA complaint trends across U.S. airports from 2015 through 2024. The analysis combines complaint records with airport reference data to identify high-volume airports, common complaint categories, and geographic complaint patterns.",
+      contributions: [
+        "Combined TSA complaint datasets by airport, category, and subcategory with airport location reference data.",
+        "Cleaned and standardized airport identifiers to support analysis and mapping.",
+        "Analyzed national complaint trends over time, including pre-pandemic growth, pandemic declines, and post-pandemic increases.",
+        "Created visualizations for top complaint airports, complaint categories, EPSP trends, category heatmaps, and geographic patterns.",
+        "Developed recommendations focused on screening consistency, TSA PreCheck communication, complaint categorization, and targeted airport improvements."
+      ],
+      techStack: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly"]
+    },
+    {
+      title: "Kia & Hyundai Theft Analysis",
+      description: "Data Visualization Project",
+      repoLink: "https://github.com/josierra21/kia-thefts-analysis",
+      overview: "A data visualization project examining the rise of Kia and Hyundai vehicle thefts across the United States between 2019 and 2023. The project uses visual storytelling and infographic design to communicate city-level, regional, and public safety trends.",
+      contributions: [
+        "Cleaned and transformed public vehicle theft data by standardizing geographic identifiers and theft count fields.",
+        "Aggregated theft data by city, year, and region to analyze national and regional trends.",
+        "Created supporting visualizations for top affected cities, regional theft distribution, and the Milwaukee theft trend.",
+        "Designed a public awareness infographic focused on clear communication and theft prevention messaging.",
+        "Applied ethical visualization practices to present public safety data accurately for a non-technical audience."
+      ],
+      techStack: ["R", "ggplot2", "Treemap", "PowerPoint", "Data Visualization", "Infographic Design"]
+    },
+    {
       title: "Weather App",
       description: "February 2024",
       repoLink: "https://github.com/josierra21/Intro-to-Python/blob/main/Sierra_week12Weather_App.py",

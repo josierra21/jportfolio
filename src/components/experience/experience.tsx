@@ -164,7 +164,7 @@ export const Experience: FC = () => {
         "Designed a public awareness infographic focused on clear communication and theft prevention messaging.",
         "Applied ethical visualization practices to present public safety data accurately for a non-technical audience."
       ],
-      techStack: ["R", "ggplot2", "Treemap", "PowerPoint", "Data Visualization", "Infographic Design"]
+      techStack: ["R", "ggplot2", "Treemap", "PowerPoint", "Data Visualization"]
     }
   ];
   const experiences = [

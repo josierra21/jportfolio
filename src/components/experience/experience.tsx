@@ -312,14 +312,14 @@ export const Experience: FC = () => {
               {projects.map((project, index) => (
                 <div
                   key={index}
-                  className="border border-gray-200 p-6 hover:border-gray-300 cursor-pointer transition-colors"
+                  className="border border-gray-200 p-6 hover:border-gray-300 cursor-pointer transition-colors flex flex-col"
                   onClick={() => setSelectedProject(project.title)}
                 >
                   <h3 className="text-xl font-medium text-gray-900 mb-3">
                     {project.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-4 flex-1 content-start">
                     {project.techStack?.map((tech, techIndex) => (
                       <span
                         key={techIndex}
